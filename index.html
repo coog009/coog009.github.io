@@ -53,19 +53,18 @@
 				<ul>
 					<ul>
 					 
-						<li><a href="/">Home</a></li>
+						<li><a href="/">主页 | Home</a></li>
 					
-						<li><a href="/archives">Archives</a></li>
+						<li><a href="/archives">归档 | Archives</a></li>
 					
-						<li><a href="/about">About</a></li>
+						<li><a href="/about">关于 | About</a></li>
 					
 					<li>
  					
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
-						<input type="hidden" name="q" value="site:yoursite.com">
-					</form>
+						<form class="search">
+							<label>Search</label>
+						<input type="text" id="ts-search-input" name="q" size="30" placeholder="搜索"><br>
+						</form>
 					
 					</li>
 				</ul>
@@ -75,61 +74,26 @@
     <div id="container">
       <div id="main">
 
-   
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2016/01/11/samba-config/" title="Samba快速配置" itemprop="url">
+  
+    <h1 itemprop="name">Samba快速配置</h1>
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+     
+           <p itemprop="description" >安装samba
+sudo apt-get install samba system-config-samba samba-client samba-common 
+
+打开/etc/samba/smb.con，添加如下内容
+[aliyun]
+path = /root
+valid u</p>
+        
     
-      <a href="/2016/01/11/hello-world/" title="Hello World" itemprop="url">Hello World</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Jun Zhao" target="_blank" itemprop="author">Jun Zhao</a>
-		
-  <p class="article-time">
-    <time datetime="2016-01-11T06:33:09.000Z" itemprop="datePublished"> 发表于 2016-01-11</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2016/01/11/hello-world/#comments" class="ds-thread-count comments-count-link" data-thread-key="2016/01/11/hello-world/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
+    <time datetime="2016-01-11T15:29:16.000Z" itemprop="datePublished">2016-01-11</time>
+  </a>
+</section>
 
 
 
@@ -155,8 +119,6 @@
 
   
 
-  
-
   <div class="linkslist">
   <p class="asidetitle">友情链接</p>
     <ul>
@@ -173,10 +135,15 @@
     </div>
     <footer><div id="footer" >
 	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
 	
 	<section class="info">
 		<p> Hello ,I&#39;m ZhaoJun in RockChip. <br/>
-			This is my blog.</p>
+			Enjoy yourself here.</p>
 	</section>
 	 
 	<div class="social-font" class="clearfix">
@@ -323,6 +290,23 @@ var _hmt = _hmt || [];
 <!-- MathJax End -->
 
 <!-- Tiny_search Begin -->
+
+<script>
+var option = {
+  engineKey: 'null'
+};
+(function(w,d,t,u,n,s,e){
+  s = d.createElement(t);
+  s.src = u;
+  s.async = 1;
+  w[n] = function(r){
+    w[n].opts = r;
+  };
+  e = d.getElementsByTagName(t)[0];
+  e.parentNode.insertBefore(s, e);
+})(window,document,'script','//tinysou-cdn.b0.upaiyun.com/ts.js','_ts');
+_ts(option);
+</script>
 
 <!-- Tiny_search End -->
 
