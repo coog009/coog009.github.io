@@ -4,26 +4,44 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Samba快速配置 | Nobody Live Long</title>
+    <title>VR学习之旅一 | Nobody Live Long</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Jun Zhao">
     
 
     
-    <meta name="description" content="安装samba1sudo apt-get install samba system-config-samba samba-client samba-common
-打开/etc/samba/smb.con，添加如下内容1234567[aliyun]	path = /root	valid users = root	writeable = yes	printable = no	create mask =">
+    <meta name="description" content="版本信息
+V0.01： 安装环境介绍
+
+安装环境
+下载最新版本的 Unity
+下载Cardboard SDK for Unity
+下载Cardboard for Unity演示版
+下载Android SDK，建议使用谷歌的Android Studio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Samba快速配置">
-<meta property="og:url" content="http://yoursite.com/2016/01/11/samba-config/index.html">
+<meta property="og:title" content="VR学习之旅一">
+<meta property="og:url" content="http://yoursite.com/2016/01/12/vr-1/index.html">
 <meta property="og:site_name" content="Nobody Live Long">
-<meta property="og:description" content="安装samba1sudo apt-get install samba system-config-samba samba-client samba-common
-打开/etc/samba/smb.con，添加如下内容1234567[aliyun]	path = /root	valid users = root	writeable = yes	printable = no	create mask =">
-<meta property="og:updated_time" content="2016-01-12T06:36:20.000Z">
+<meta property="og:description" content="版本信息
+V0.01： 安装环境介绍
+
+安装环境
+下载最新版本的 Unity
+下载Cardboard SDK for Unity
+下载Cardboard for Unity演示版
+下载Android SDK，建议使用谷歌的Android Studio">
+<meta property="og:updated_time" content="2016-01-12T15:50:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Samba快速配置">
-<meta name="twitter:description" content="安装samba1sudo apt-get install samba system-config-samba samba-client samba-common
-打开/etc/samba/smb.con，添加如下内容1234567[aliyun]	path = /root	valid users = root	writeable = yes	printable = no	create mask =">
+<meta name="twitter:title" content="VR学习之旅一">
+<meta name="twitter:description" content="版本信息
+V0.01： 安装环境介绍
+
+安装环境
+下载最新版本的 Unity
+下载Cardboard SDK for Unity
+下载Cardboard for Unity演示版
+下载Android SDK，建议使用谷歌的Android Studio">
 
     
     <link rel="alternative" href="/atom.xml" title="Nobody Live Long" type="application/atom+xml">
@@ -82,14 +100,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/01/11/samba-config/" title="Samba快速配置" itemprop="url">Samba快速配置</a>
+      <a href="/2016/01/12/vr-1/" title="VR学习之旅一" itemprop="url">VR学习之旅一</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Jun Zhao" target="_blank" itemprop="author">Jun Zhao</a>
 		
   <p class="article-time">
-    <time datetime="2016-01-11T15:29:16.000Z" itemprop="datePublished"> 发表于 2016-01-11</time>
+    <time datetime="2016-01-12T15:30:05.000Z" itemprop="datePublished"> 发表于 2016-01-12</time>
     
   </p>
 </header>
@@ -98,13 +116,19 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#u5B89_u88C5samba"><span class="toc-number">1.</span> <span class="toc-text">安装samba</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u6253_u5F00/etc/samba/smb-con_uFF0C_u6DFB_u52A0_u5982_u4E0B_u5185_u5BB9"><span class="toc-number">2.</span> <span class="toc-text">打开/etc/samba/smb.con，添加如下内容</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u91CD_u542Fsamba_u670D_u52A1"><span class="toc-number">3.</span> <span class="toc-text">重启samba服务</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#u7248_u672C_u4FE1_u606F"><span class="toc-number">1.</span> <span class="toc-text">版本信息</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u5B89_u88C5_u73AF_u5883"><span class="toc-number">2.</span> <span class="toc-text">安装环境</span></a></li></ol>
 		
 		</div>
 		
-		<h1 id="u5B89_u88C5samba"><a href="#u5B89_u88C5samba" class="headerlink" title="安装samba"></a><strong>安装samba</strong></h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install samba system-config-samba samba-client samba-common</span><br></pre></td></tr></table></figure>
-<h1 id="u6253_u5F00/etc/samba/smb-con_uFF0C_u6DFB_u52A0_u5982_u4E0B_u5185_u5BB9"><a href="#u6253_u5F00/etc/samba/smb-con_uFF0C_u6DFB_u52A0_u5982_u4E0B_u5185_u5BB9" class="headerlink" title="打开/etc/samba/smb.con，添加如下内容"></a><strong>打开/etc/samba/smb.con，添加如下内容</strong></h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[aliyun]</span><br><span class="line">	path = /root</span><br><span class="line">	valid users = root</span><br><span class="line">	writeable = yes</span><br><span class="line">	printable = no</span><br><span class="line">	create mask = <span class="number">0777</span></span><br><span class="line">	directory mask = <span class="number">0777</span></span><br></pre></td></tr></table></figure>
-<h1 id="u91CD_u542Fsamba_u670D_u52A1"><a href="#u91CD_u542Fsamba_u670D_u52A1" class="headerlink" title="重启samba服务"></a><strong>重启samba服务</strong></h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service sambd restart</span><br></pre></td></tr></table></figure>
+		<h1 id="u7248_u672C_u4FE1_u606F"><a href="#u7248_u672C_u4FE1_u606F" class="headerlink" title="版本信息"></a>版本信息</h1><ul>
+<li>V0.01： 安装环境介绍</li>
+</ul>
+<h1 id="u5B89_u88C5_u73AF_u5883"><a href="#u5B89_u88C5_u73AF_u5883" class="headerlink" title="安装环境"></a>安装环境</h1><ul>
+<li>下载最新版本的 <a href="http://unity3d.com/cn/get-unity/download" target="_blank" rel="external">Unity</a></li>
+<li>下载<a href="https://developers.google.com/cardboard/unity/download?hl=zh-cn" target="_blank" rel="external">Cardboard SDK for Unity</a></li>
+<li>下载<a href="https://developers.google.com/cardboard/unity/download?hl=zh-cn" target="_blank" rel="external">Cardboard for Unity演示版</a></li>
+<li>下载<a href="http://developer.android.com/sdk/index.html" target="_blank" rel="external">Android SDK</a>，建议使用谷歌的Android Studio</li>
+</ul>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -112,13 +136,13 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/computer/">computer</a>
+  <a class="article-category-link" href="/categories/VR/">VR</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/samba-配置/">samba 配置</a>
+  <span></span> <a href="/tags/cardboard-vr-unity3d-android/">cardboard vr unity3d android</a>
   </div>
 
 </div>
@@ -162,20 +186,20 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/01/12/vr-1/" title="VR学习之旅一">
-  <strong>上一篇：</strong><br/>
-  <span>
-  VR学习之旅一</span>
+
+<div class="next">
+<a href="/2016/01/11/samba-config/"  title="Samba快速配置">
+ <strong>下一篇：</strong><br/> 
+ <span>Samba快速配置
+</span>
 </a>
 </div>
-
 
 </nav>
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2016/01/11/samba-config/" data-title="Samba快速配置" data-url="http://yoursite.com/2016/01/11/samba-config/"></div>
+	<div class="ds-thread" data-thread-key="2016/01/12/vr-1/" data-title="VR学习之旅一" data-url="http://yoursite.com/2016/01/12/vr-1/"></div>
 </section>
 
 
@@ -185,7 +209,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#u5B89_u88C5samba"><span class="toc-number">1.</span> <span class="toc-text">安装samba</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u6253_u5F00/etc/samba/smb-con_uFF0C_u6DFB_u52A0_u5982_u4E0B_u5185_u5BB9"><span class="toc-number">2.</span> <span class="toc-text">打开/etc/samba/smb.con，添加如下内容</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u91CD_u542Fsamba_u670D_u52A1"><span class="toc-number">3.</span> <span class="toc-text">重启samba服务</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#u7248_u672C_u4FE1_u606F"><span class="toc-number">1.</span> <span class="toc-text">版本信息</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u5B89_u88C5_u73AF_u5883"><span class="toc-number">2.</span> <span class="toc-text">安装环境</span></a></li></ol>
  
   </div>
 

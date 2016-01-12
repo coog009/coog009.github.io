@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-01-12T06:36:20.000Z</updated>
+  <updated>2016-01-12T15:50:13.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[VR学习之旅一]]></title>
+    <link href="http://yoursite.com/2016/01/12/vr-1/"/>
+    <id>http://yoursite.com/2016/01/12/vr-1/</id>
+    <published>2016-01-12T15:30:05.000Z</published>
+    <updated>2016-01-12T15:50:13.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="u7248_u672C_u4FE1_u606F"><a href="#u7248_u672C_u4FE1_u606F" class="headerlink" title="版本信息"></a>版本信息</h1><ul>
+<li>V0.01： 安装环境介绍</li>
+</ul>
+<h1 id="u5B89_u88C5_u73AF_u5883"><a href="#u5B89_u88C5_u73AF_u5883" class="headerlink" title="安装环境"></a>安装环境</h1><ul>
+<li>下载最新版本的 <a href="http://unity3d.com/cn/get-unity/download" target="_blank" rel="external">Unity</a></li>
+<li>下载<a href="https://developers.google.com/cardboard/unity/download?hl=zh-cn" target="_blank" rel="external">Cardboard SDK for Unity</a></li>
+<li>下载<a href="https://developers.google.com/cardboard/unity/download?hl=zh-cn" target="_blank" rel="external">Cardboard for Unity演示版</a></li>
+<li>下载<a href="http://developer.android.com/sdk/index.html" target="_blank" rel="external">Android SDK</a>，建议使用谷歌的Android Studio</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="u7248_u672C_u4FE1_u606F"><a href="#u7248_u672C_u4FE1_u606F" class="headerlink" title="版本信息"></a>版本信息</h1><ul>
+<li>V0.01： 安装环境介绍</li>]]>
+    </summary>
+    
+      <category term="cardboard vr unity3d android" scheme="http://yoursite.com/tags/cardboard-vr-unity3d-android/"/>
+    
+      <category term="VR" scheme="http://yoursite.com/categories/VR/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Samba快速配置]]></title>
